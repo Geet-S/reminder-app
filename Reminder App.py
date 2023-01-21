@@ -57,7 +57,7 @@ def DeleteEventsProceed():
     con = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')                                   
+                                       password='')                                   
     cur=con.cursor()
     cur.execute("DELETE FROM Event")
 
@@ -97,7 +97,7 @@ def Delete_Events():
     con = mysql.connector.connect(host='localhost',
                                    database='sys',
                                    user='root',
-                                   password='sankar_12345')
+                                   password='')
      
     cur=con.cursor()
 
@@ -136,7 +136,7 @@ def View_events():
     con = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')
+                                       password='')
      
     cur=con.cursor()
     cur.execute("SELECT*FROM Event")
@@ -155,7 +155,7 @@ def Clear_History():
     con = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')                                   
+                                       password='')                                   
     cur=con.cursor()
     cur.execute("DELETE FROM Event")
     con.commit()
@@ -201,7 +201,7 @@ def Save_Event():
         conn = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')
+                                       password='')
         if conn.is_connected():
             db_cursor=conn.cursor()
             db_cursor.execute("INSERT INTO Event(Event_name,Date_of_event,Start_Time_of_event,End_Time_of_event,Description)VALUES(%s,%s,%s,%s,%s)",
@@ -713,7 +713,7 @@ def CheckTimeDateStart():
         con = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')
+                                       password='')
          
         cur=con.cursor()
     
@@ -743,7 +743,7 @@ def CheckTimeDateEnd():
         con = mysql.connector.connect(host='localhost',
                                        database='sys',
                                        user='root',
-                                       password='sankar_12345')
+                                       password='')
          
         cur=con.cursor()
     
