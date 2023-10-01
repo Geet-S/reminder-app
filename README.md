@@ -1,2 +1,1 @@
-# reminder-app
-Simple reminder app I made loooooonggg ago (kept for memories)
+Just a basic reminder app with a few extra functions
