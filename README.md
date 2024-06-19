@@ -1,1 +1,1 @@
-Just a basic reminder app with a few extra functions
+Just a basic reminder app made for learning
